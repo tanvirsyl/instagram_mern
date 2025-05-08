@@ -1,0 +1,230 @@
+.createPost {
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.createPost:hover {
+    transform: translateY(-5px);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+.post-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    margin: 0;
+}
+
+#post-btn {
+    border: none;
+    color: #0095f6;
+    background: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#post-btn:hover {
+    background-color: rgba(0, 149, 246, 0.1);
+}
+
+#post-btn:disabled {
+    color: #8e8e8e;
+    cursor: not-allowed;
+}
+
+.main-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #efefef;
+}
+
+.main-div img#placeholder,
+.main-div img#output {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-div video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Upload type selector */
+.upload-type-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.upload-type-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #efefef;
+    color: #262626;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.upload-type-btn svg {
+    margin-right: 8px;
+}
+
+.upload-type-btn.active {
+    background-color: #0095f6;
+    color: white;
+}
+
+.upload-type-btn:hover {
+    background-color: #0095f6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 149, 246, 0.2);
+}
+
+/* File upload button */
+.file-upload-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    padding: 12px 0;
+    border: 2px dashed #dbdbdb;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-upload-btn svg {
+    margin-right: 8px;
+}
+
+.file-upload-btn:hover {
+    border-color: #0095f6;
+    background-color: rgba(0, 149, 246, 0.05);
+    transform: translateY(-2px);
+}
+
+.details {
+    padding: 20px;
+    border-top: 1px solid #efefef;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.card-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    resize: vertical;
+    transition: border 0.3s ease;
+    margin-bottom: 5px;
+}
+
+textarea:focus {
+    border-color: #0095f6;
+}
+
+.character-count {
+    text-align: right;
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+}
+
+/* Helper text styling */
+.main-div p {
+    font-size: 13px;
+    color: #8e8e8e;
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .createPost {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    
+    .main-div img#placeholder,
+    .main-div img#output,
+    .main-div video {
+        max-width: 100%;
+    }
+}
